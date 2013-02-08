@@ -1,17 +1,63 @@
+<!doctype html>
 <html>
 <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="/css/stylesheet.css" type="text/css" charset="utf-8" />
+    <link href="atom.xml" type="application/atom+xml" rel="alternate" title="atom feed">
 
-    <style type="text/css">
-            body{
-                font-family: 'jaslinsfontmedium';
-            }
-    </style>
+    <title>Vox Bloom</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 1140px Grid styles for IE -->
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
+
+    <!-- The 1140px Grid - http://cssgrid.net/ -->
+    <link rel="stylesheet" href="/css/1140.css" type="text/css" media="screen" />
+
+    <!-- site styles -->
+    <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen" />
+
+    <!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+    <script type="text/javascript" src="/js/css3-mediaqueries.js"></script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34228211-1']);
+      _gaq.push(['_setDomainName', 'voxbloom.org']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
 </head>
+
 <body>
 
-  {{ content }}
+    <!-- Header -->
+    <div class="container" id="header">
+        <div class="row">
+            <div class="twelvecol">
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="container" id="content">
+        <div class="row">
+            {{ content }}
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container" id="footer">
+        <div class="row border midLiner">
+        </div>
+    </div>
 
 </body>
 </html>
