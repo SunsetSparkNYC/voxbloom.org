@@ -1,18 +1,22 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-
+<div id="headline" class="text-center">
+    <h1>{{ page.subject }}</h1>
+    <h4>by {{ page.interviewer }}</h4>
+</div>
 <div id="portrait">
-    <img src="{{ site.baseurl | append:'img/' | append:page.portrait }}" alt="{{ page.title }}" width=400 height=400>
+    <img src="{{ site.baseurl | append:'img/' | append:page.portrait }}" alt="{{ page.title }}" class="img-polaroid center" width=400 height=400>
 </div>
-
+<br>
 <div id="introduction">
-    <i> {{ page.introduction }} </i>
+    <em>{{ page.introduction }}</em>
 </div>
+<br>
 <div id="audio">
     {{ page.audio }}
 </div>
+<br>
 <div id="transcript">
     {{ content }}
 </div>

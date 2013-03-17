@@ -1,6 +1,8 @@
 ---
 layout: interview
 title: Jane Teacher by John Student
+subject: Jane Teacher
+interviewer: John Student
 portrait: portrait-file.jpg
 audio: audio-file.mp3
 introduction: Sed aliquip vero, velit hashtag ugh williamsburg semiotics
