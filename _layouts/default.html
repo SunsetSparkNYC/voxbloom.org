@@ -9,7 +9,7 @@
 
     <!-- Load CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="/css/voxbloom.min.css" rel="stylesheet" media="screen">
+    <link href="/css/voxbloom.css" rel="stylesheet" media="screen">
 
 </head>
 <body>
@@ -24,16 +24,10 @@
 
         <!-- Content -->
         <div class="row">
-            <div class="span2 offset1">
-                <img class="media-object" data-src="holder.js/140x900">
-            </div>
-
-            <div class="span6">
-                {{ content }}
-            </div>
-
-            <div class="span2">
-                <img class="media-object" data-src="holder.js/140x900">
+            <div id="content" class="span11 offset1">
+                <div class="offset2 span6">
+                    {{ content }}
+                </div>
             </div>
         </div>
 
