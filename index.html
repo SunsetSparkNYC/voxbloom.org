@@ -3,11 +3,34 @@ layout: default
 title: Vox Bloom
 ---
 
-<h1>Latest Interview</h1>
+<h1>Latest Interviews</h1>
 <ul class="posts">
-{% for post in site.posts %}
-    <li><a href="{{ post.url }}"><img src="{{ site.baseurl | append:'img/' | append:post.portrait }}" width=400 height=400></li>
-  <li>&raquo; <a href="{{ post.url }}">{{ post.title }}</a> &raquo; <span>{{ post.date | date_to_string }}</span></li>
+{% for post in paginator.posts %}
+    <li class="post">
+        <h4><a href="{{ post.url }}">{{ post.title }}</a> <br> <span class="pull-right">{{ post.date |  date: "%B %d, %Y" }}</span>
+        <a href="{{ post.url }}"><img src="{{ site.baseurl | append:'img/portraits/' | append:post.vb_id | append:'-portrait.jpg'}}" class="img-polaroid center" width=400 height=400></a></h4>
+        <span>{{ post.summary }} </span>
+    </li>
 {% endfor %}
 </ul>
 
+<!-- Pagination links -->
+<div class="pagination text-center">
+    {% if paginator.previous_page %}
+        {% if paginator.page == 2 %}
+        <a href="/" class="previous">Newer</a>
+        {% else %}
+        <a href="/page{{paginator.previous_page}}" class="previous">Newer</a>
+        {% endif %}
+    {% else %}
+    <span class="previous">Newer</span>
+    {% endif %}
+
+    &nbsp;&nbsp;<span class="page_number">Page {{paginator.page}} of {{paginator.total_pages}}</span>&nbsp;&nbsp;
+
+    {% if paginator.next_page %}
+    <a href="/page{{paginator.next_page}}" class="next ">Older</a>
+    {% else %}
+    <span class="next ">Older</span>
+    {% endif %}
+</div>

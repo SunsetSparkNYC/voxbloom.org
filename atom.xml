@@ -11,7 +11,7 @@ layout: nil
  <id>http://voxbloom.com</id>
  <author>
    <name>Vox Bloom | Sunset Spark</name>
-   <email>gaelen+voxbloom@sunsetspark.org</email>
+   <email>voxbloom@sunsetspark.org</email>
  </author>
 
  {% for post in site.posts %}
@@ -19,7 +19,7 @@ layout: nil
    <title>{{ post.title }}</title>
    <link href="http://voxbloom.com{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://voxbloom.com/interview{{ post.id }}</id>
+   <id>{{ post.vb_id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}

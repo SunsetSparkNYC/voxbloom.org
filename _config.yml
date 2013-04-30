@@ -15,7 +15,7 @@ lsi: false
 pygments: false
 markdown: rdiscount
 permalink: /:year/:month/:day/:title
-paginate: 10
+paginate: 1
 
 rdiscount:
   extensions: [smart]
