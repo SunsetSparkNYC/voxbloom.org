@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 
 <head>
+    <title>{% if page.title %} {{ page.title }} | {% endif %}Vox Bloom</title>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="atom.xml" type="application/atom+xml" rel="alternate" title="atom feed">
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="atom feed">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Load CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="/css/voxbloom.css" rel="stylesheet" media="screen">
 
+    {% if page.twitter_card %}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@SunsetSparkNYC">
+    <meta name="twitter:creator" content="@SunsetSparkNYC">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.summary }}">
+    <meta name="twitter:image" content="{{ site.url | append: site.baseurl | append:'img/portraits/' | append:page.vb_id | append:'-portrait.jpg'}}">
+    {% endif %}
 </head>
 <body>
     <div class="container">
@@ -40,7 +49,8 @@
         </div>
 
     </div>
-    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-2.0.0.min.js">\x3C/script>')</script>
     <script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
