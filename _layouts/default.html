@@ -14,8 +14,8 @@
 
     {% if page.twitter_card %}
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@SunsetSparkNYC">
-    <meta name="twitter:creator" content="@SunsetSparkNYC">
+    <meta name="twitter:site" content="@{{ site.twitter_id }}">
+    <meta name="twitter:creator" content="@{{ site.twitter_id }}">
     <meta name="twitter:title" content="{{ page.title }}">
     <meta name="twitter:description" content="{{ page.summary }}">
     <meta name="twitter:image" content="{{ site.url | append: site.baseurl | append:'img/portraits/' | append:page.vb_id | append:'-portrait.jpg'}}">
