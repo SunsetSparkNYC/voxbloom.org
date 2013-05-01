@@ -3,16 +3,21 @@ layout: default
 title: Vox Bloom
 ---
 
-<h1>Latest Interviews</h1>
-<ul class="posts">
-{% for post in paginator.posts %}
-    <li class="post">
-        <h4><a href="{{ post.url }}">{{ post.title }}</a> <br> <span class="pull-right">{{ post.date |  date: "%B %d, %Y" }}</span>
-        <a href="{{ post.url }}"><img src="{{ site.baseurl | append:'img/portraits/' | append:post.vb_id | append:'-portrait.jpg'}}" class="img-polaroid center" width=400 height=400></a></h4>
-        <span>{{ post.summary }} </span>
-    </li>
-{% endfor %}
-</ul>
+<!-- Interviews -->
+<div class=>
+    <h1>Latest Interviews</h1>
+    <br>
+    <div class="posts">
+    {% for post in paginator.posts %}
+        <div class="row">
+            <h4><a href="{{ post.url }}">{{ post.title }}</a> <br> <span class="pull-right">{{ post.date |  date: "%B %d, %Y" }}</span>
+            <a href="{{ post.url }}"><img src="{{ site.baseurl | append:'img/portraits/' | append:post.vb_id | append:'-portrait.jpg'}}" class="img-polaroid center" width=400 height=400></a></h4>
+            <span>{{ post.summary }}</span>
+        </div>
+        <br>
+    {% endfor %}
+    </div>
+</div>
 
 <!-- Pagination links -->
 <div class="pagination text-center">

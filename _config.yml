@@ -4,7 +4,7 @@ auto:        false
 server:      true
 server_port: 4000
 baseurl:    /
-url: http://voxbloom.com:4000
+url: http://voxbloom.org
 
 source:      .
 destination: ./_site
@@ -15,7 +15,7 @@ lsi: false
 pygments: false
 markdown: rdiscount
 permalink: /:year/:month/:day/:title
-paginate: 1
+paginate: 2
 
 rdiscount:
   extensions: [smart]
