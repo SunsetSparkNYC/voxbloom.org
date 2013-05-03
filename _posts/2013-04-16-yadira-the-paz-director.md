@@ -7,7 +7,7 @@ subject: Yadira
 interviewer: Juan
 soundcloud_id: 90533718
 summary: Today we talked to Yadira, the director of our after school
-    program.  She has a lot of fun planning activies for kids, but
+    program.  She has a lot of fun planning activities for kids, but
     the budget doesn't sound fun at all.
 introduction: Yadira is the director of the PAZ After School Program.
     She has been the director here for five years.  Even though she
@@ -34,7 +34,7 @@ projects.  It's just a really fun job.
 Well, there's some non-cool things, but we can talk about that later,
 ha ha ha.  I think what makes my job so fun -- the cool things I get
 to do -- we organize all sorts of projects that kids can take outside
-of the classroom.  We can work kids - the creat their own events. They
+of the classroom.  We can work kids - the create their own events. They
 have their science fair coming up.  Kids are basically going to teach
 other people, adults and their parents, about science by doing some
 cool experiments.  Sometimes day school doesn't have a lot of time to
@@ -99,15 +99,15 @@ think that's exciting.
 
 My goal is that you kids are exposed to many different experiences.  I
 don't want to you to do the same schedule everyday.  I think it's
-important that you try out different activites and think outside of
+important that you try out different activities and think outside of
 the box.  In years to come when you're in middle school, you might not
 know it then and there, you may feel like, "hey, I'm going to try this
 because I tried something totally new in PAZ and that was a really
 cool experience.  I'm not afraid to try new things or be open minded
-to new ideas."  I hope that when we introduce these kinds of activies
-or ideas to you in PAZ, that that stays with you as you get to middle
-school.  That's probably the most exciting part about the job.  You've
-been on our theater field trips, right?
+to new ideas."  I hope that when we introduce these kinds of
+activities or ideas to you in PAZ, that that stays with you as you get
+to middle school.  That's probably the most exciting part about the
+job.  You've been on our theater field trips, right?
 
 ** Yeah. **
 

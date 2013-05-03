@@ -27,7 +27,7 @@ interview me?
 
 Already, lets get to it.
 
-** What's your favorite thing abou computers? **
+** What's your favorite thing about computers? **
 
 My favorite thing about computers?  I think I have two favorite things
 about computers.  I like the technology -- that they are new and fancy
@@ -265,5 +265,5 @@ it's fun.
 programist. **
 
 A computer programist? That sounds so much better than computer
-programmer, which was is people nornmally say.  Thank you, it was a
+programmer, which was is people normally say.  Thank you, it was a
 pleasure.
